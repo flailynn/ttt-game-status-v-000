@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 # #won? method determines if the game has been won by a player
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
+  WIN_COMBINATIONS.select do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
@@ -26,13 +26,15 @@ def won?(board)
     position_2 = board[win_index_2].upcase
     position_3 = board[win_index_3].upcase
 
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return win_combination
-    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      return win_combination
-    else
-      false
-    end
+    #
+
+    #if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    #  return win_combination
+    #elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+    #  return win_combination
+    #else
+    #  false
+    #end
 
   end
 end
