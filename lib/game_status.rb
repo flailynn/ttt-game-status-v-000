@@ -23,11 +23,12 @@ WIN_COMBINATIONS.detect do |win_combination|
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
 
-    #Load 
+    #Load the token (if any) at index position into a variable
     position_1 = board[win_index_1].upcase
     position_2 = board[win_index_2].upcase
     position_3 = board[win_index_3].upcase
 
+    # Determine whether positions contain winning X (or O) combination
     (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
 
   end
