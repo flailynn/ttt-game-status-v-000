@@ -14,3 +14,9 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
+# #won? method determines if the game has been won by a player
+def won?(board)
+  #some code
+end
+  
