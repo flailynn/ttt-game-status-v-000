@@ -64,6 +64,10 @@ end
 
 # #winner method determines which player won (X or O)
 def winner(board)
-  winning_index = won?(board)[0]
-  winning_token = board[winning_index]
+  if won?(board)
+    winning_index = won?(board)[0]
+    winning_token = board[winning_index]
+  else
+    nil
+  end
 end
