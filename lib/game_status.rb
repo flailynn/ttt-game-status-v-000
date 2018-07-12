@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 # #won? method determines if the game has been won by a player
+# returns array of win_combination if true or nil if false
 def won?(board)
 WIN_COMBINATIONS.detect do |win_combination|
     #Load each win index into a variable
@@ -30,7 +31,6 @@ WIN_COMBINATIONS.detect do |win_combination|
 
     # Determine whether positions contain winning X (or O) combination
     (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
-
   end
 
 
