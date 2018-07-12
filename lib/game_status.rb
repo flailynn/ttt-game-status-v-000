@@ -37,6 +37,6 @@ end
 # #full? method determines if there are any open positions left on the board
 def full?(board)
   board.any? do |position|
-    position == " " || position == "" || position.nil?
+    !(position == " " || position == "" || position.nil?)
   end
 end
