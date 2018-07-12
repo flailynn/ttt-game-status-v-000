@@ -35,10 +35,8 @@ WIN_COMBINATIONS.detect do |win_combination|
 end
 
 # #full? method determines if there are any open positions left on the board
-def full(board)
-  if board.find board.each do |position|
-    true
-  else
-    false
+def full?(board)
+  board.any? do |position|
+    position == " " || position == "" || poistion.nil?
   end
 end
