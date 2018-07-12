@@ -64,5 +64,5 @@ end
 
 # #winner? method determines which player won (X or O)
 def winner?(board)
-  #code
+  won?(board)[0]
 end
