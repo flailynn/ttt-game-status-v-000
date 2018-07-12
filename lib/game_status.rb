@@ -51,6 +51,9 @@ def draw?(board)
   end
 end
 
+# #over? method determines if any of the following has occured:
+#   1. A player has won
+#   2. The game is a draw
 def over?(board)
   #code
 end
