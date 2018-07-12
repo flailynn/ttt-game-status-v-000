@@ -43,5 +43,5 @@ win_combination_array =  WIN_COMBINATIONS.select do |win_combination|
   else
     false
   end
-  
+
 end
