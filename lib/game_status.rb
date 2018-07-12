@@ -55,5 +55,9 @@ end
 #   1. A player has won
 #   2. The game is a draw
 def over?(board)
-  #code
+  if won?(board) || draw?(board)
+    true
+  else
+    false
+  end
 end
