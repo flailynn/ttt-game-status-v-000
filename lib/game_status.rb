@@ -40,3 +40,14 @@ def full?(board)
     position == " " || position == "" || position.nil?
   end
 end
+
+# #draw? determines if there is a draw
+# a draw occurs when the board is full and there are no winners
+
+def draw?(board)
+  if full?(board) && !won?
+    true
+  else
+    false
+  end
+end
