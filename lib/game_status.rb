@@ -32,6 +32,13 @@ WIN_COMBINATIONS.detect do |win_combination|
     # Determine whether positions contain winning X (or O) combination
     (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
   end
+end
 
-
+# #full? method determines if there are any open positions left on the board
+def full(board)
+  if board.find board.each do |position|
+    true
+  else
+    false
+  end
 end
