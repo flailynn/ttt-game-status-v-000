@@ -61,3 +61,8 @@ def over?(board)
     false
   end
 end
+
+# #winner? method determines which player won (X or O)
+def winner?(board)
+  #code
+end
